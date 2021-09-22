@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./components/navbar.component";
+import { Carousel } from "antd";
+import './App.scss';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <Carousel autoplay>
+        <div>
+          <h3 className="carouselExample">1</h3>
+        </div>
+        <div>
+          <h3 className="carouselExample">2</h3>
+        </div>
+        <div>
+          <h3 className="carouselExample">3</h3>
+        </div>
+        <div>
+          <h3 className="carouselExample">4</h3>
+        </div>
+      </Carousel>
+    </>
   );
 }
 
