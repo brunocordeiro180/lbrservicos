@@ -1,14 +1,8 @@
-@import "~antd/dist/antd.css";
-
 * {
-    font-family: "Montserrat";
+    font-family: "Montserrat" !important;
     margin: 0;
 }
 
-h3 {
-    font-weight: 900;
-    text-transform: none;
-    font-size: 2rem;
-    line-height: 1.6em;
-    letter-spacing: 0.5px;
+body{
+    overflow-x: hidden;
 }

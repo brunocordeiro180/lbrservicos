@@ -1,23 +1,16 @@
 @import '../../styles/colors.scss';
 
-.navbar{
-    display: flex;
+.mynav{
     padding: 30px 20px;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: $primary;
-    color: #FFFF;
+    background-color: $primary !important;
     font-weight: 700;
     font-size: 15px;
 
+    .me-auto {
+        margin-right: 0!important;
+    }
 
-    &__links{
-        display: flex;
-        a {
-            font-weight: bold;
-            text-decoration: white;
-            color: white;
-            padding: 0 10px;
-        }
+    &__link{
+        color: white !important;
     }
 }

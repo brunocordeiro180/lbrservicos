@@ -2,15 +2,15 @@ import React from 'react';
 import { BiLineChartDown, BiHourglass } from 'react-icons/bi';
 import { HiLightningBolt } from 'react-icons/hi';
 import { GiInjustice } from 'react-icons/gi'
-import { Col, Row } from 'antd';
+import { Row, Col } from 'react-bootstrap'
 import './diferenciais.styles.scss';
 
 const Diferenciais = () => {
     return (
-        <div className="diferenciais">
-            <h2 className="diferenciais__title">
+        <div id="diferenciais" className="diferenciais">
+            <h4 className="diferenciais__title">
                 <strong>NOSSOS DIFERENCIAS</strong>
-            </h2>
+            </h4>
             <Row className="diferenciais__row">
                 <Col className="diferenciais__column">
                     <BiLineChartDown size={120} />

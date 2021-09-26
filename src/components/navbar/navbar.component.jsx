@@ -1,26 +1,25 @@
 import React from 'react';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 import './navbar.styles.scss';
 
-const NavBar = () => {
+const Menu = () => {
     return (
-        <div className="navbar">
-            <div className="navbar__logo">
-                <span>
-                    <strong style={{fontSize: '20px'}}>Grupo LBR Serviços</strong>
-                </span>
-            </div>
-            <div className="navbar__links">
-                <a href="/">Home</a>
-                <a href="/">Sobre nós</a>
-                <a href="/">Serviços</a>
-                <a href="/">Cases de Sucesso</a>
-                <a href="/">Blog</a>
-                <a href="/">Consultoria</a>
-                <a href="/">Trabalhe Conosco</a>
-                <a href="/">Contato</a>
-            </div>
-        </div>
+        <Navbar className="d-flex mynav" bg="dark" variant="dark" expand="lg">
+            <Container className="myNav__container">
+                <Navbar.Brand className="mynav__link" href="#home">Grupo LBR Serviços</Navbar.Brand>
+                <Navbar.Toggle  />
+                <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
+                    <Nav className=" justify-content-end me-auto">
+                        <Nav.Link className="mynav__link" href="/">Home</Nav.Link>
+                        <Nav.Link className="mynav__link" href="#servicos">Serviços</Nav.Link>
+                        <Nav.Link className="mynav__link" href="#diferenciais">Diferenciais</Nav.Link>
+                        <Nav.Link className="mynav__link" href="#contato">Contato</Nav.Link>
+                        
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     )
 }
 
-export default NavBar;
+export default Menu;
