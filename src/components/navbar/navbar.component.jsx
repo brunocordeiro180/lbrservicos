@@ -5,7 +5,9 @@ const NavBar = () => {
     return (
         <div className="navbar">
             <div className="navbar__logo">
-                <span>Grupo LBR Serviços</span>
+                <span>
+                    <strong style={{fontSize: '20px'}}>Grupo LBR Serviços</strong>
+                </span>
             </div>
             <div className="navbar__links">
                 <a href="/">Home</a>

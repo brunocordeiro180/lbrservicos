@@ -1,25 +1,16 @@
-import NavBar from "./components/navbar.component";
-import { Carousel } from "antd";
+import NavBar from "./components/navbar/navbar.component";
 import './App.scss';
+import Servicos from "./components/servicos/servicos.component";
+import Contato from "./components/contato/contato.component";
+import Diferenciais from "./components/diferenciais/diferenciais.component";
 
 const App = () => {
   return (
     <>
       <NavBar />
-      <Carousel autoplay>
-        <div>
-          <h3 className="carouselExample">1</h3>
-        </div>
-        <div>
-          <h3 className="carouselExample">2</h3>
-        </div>
-        <div>
-          <h3 className="carouselExample">3</h3>
-        </div>
-        <div>
-          <h3 className="carouselExample">4</h3>
-        </div>
-      </Carousel>
+      <Servicos />
+      <Diferenciais />
+      <Contato />
     </>
   );
 }
