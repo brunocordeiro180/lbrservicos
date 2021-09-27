@@ -59,23 +59,23 @@ const Contato = () => {
                 <div className="contato__form">
                     <Form>
                         <Row className="mb-3">
-                            <Form.Group as={Col} controlId="formGridEmail">
+                            <Form.Group as={Col} lg={6} md={6} sm={12} xs={12} controlId="formGridEmail">
                                 <Form.Label>Nome completo</Form.Label>
                                 <Form.Control type="text" placeholder="Digite seu nome" value={name} onChange={e => setName(e.target.value)} />
                             </Form.Group>
 
-                            <Form.Group as={Col} controlId="formGridPassword">
+                            <Form.Group as={Col} lg={6} md={6} sm={12} xs={12} controlId="formGridPassword">
                                 <Form.Label>E-mail</Form.Label>
                                 <Form.Control type="email" placeholder="E-mail" value={emailFrom} onChange={e => setEmailFrom(e.target.value)} />
                             </Form.Group>
                         </Row>
                         <Row className="mb-3">
-                            <Form.Group as={Col} controlId="formGridCity">
+                            <Form.Group as={Col} lg={6} md={6} sm={12} xs={12} controlId="formGridCity">
                                 <Form.Label>Telefone</Form.Label>
                                 <Form.Control />
                             </Form.Group>
 
-                            <Form.Group as={Col} controlId="formGridState">
+                            <Form.Group as={Col} lg={6} md={6} sm={12} xs={12} controlId="formGridState">
                                 <Form.Label>Serviço</Form.Label>
                                 <Form.Select defaultValue="Serviço...">
                                     <option value={null}></option>
