@@ -1,0 +1,15 @@
+.sobre-nos{
+    margin: 80px 0;
+    &__title{
+        display: block;
+        color: #313030;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__text{
+        margin: 0 50px;
+    }
+    
+}

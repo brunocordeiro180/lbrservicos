@@ -10,10 +10,10 @@ const Menu = () => {
                 <Navbar.Toggle  />
                 <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
                     <Nav className=" justify-content-end me-auto">
-                        <Nav.Link className="mynav__link" href="/">Home</Nav.Link>
-                        <Nav.Link className="mynav__link" href="#servicos">Serviços</Nav.Link>
-                        <Nav.Link className="mynav__link" href="#diferenciais">Diferenciais</Nav.Link>
-                        <Nav.Link className="mynav__link" href="#contato">Contato</Nav.Link>
+                        <Nav.Link className="mynav__link" href="#root">HOME</Nav.Link>
+                        <Nav.Link className="mynav__link" href="#servicos">SERVIÇOS</Nav.Link>
+                        <Nav.Link className="mynav__link" href="#diferenciais">DIFERENCIAIS</Nav.Link>
+                        <Nav.Link className="mynav__link" href="#contato">CONTATO</Nav.Link>
                         
                     </Nav>
                 </Navbar.Collapse>

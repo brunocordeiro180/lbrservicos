@@ -10,7 +10,11 @@
         margin-right: 0!important;
     }
 
-    &__link{
-        color: white !important;
+    &__link {
+        text-decoration: none;
+    }
+    
+    &__link:hover {
+        text-decoration: underline;
     }
 }

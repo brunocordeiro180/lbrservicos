@@ -1,4 +1,4 @@
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Form, Button } from 'react-bootstrap'
 import React from 'react';
 import emailjs from 'emailjs-com';
 import './contato.styles.scss';
@@ -51,33 +51,51 @@ const Contato = () => {
     }
 
     return (
-        <div id="contato">
+        <div id="contato" className="contato-card">
             <h4 className="nossos-servicos__title">
                 <strong>FALE CONOSCO</strong>
             </h4>
-            <Row className="contato">
-                <Col lg={6} md={6} sm={12} xs={12}>
-                    <div className="contato__text">
-                        O Grupo LBR oferece uma consultoria GRATUITA de redução de custos de mão de obra para sua EMPRESA ou CONDOMÍNIO. Gostou? Então solicite agora mesmo uma visita!*
-                    </div>
-                </Col>
-                <Col lg={6} md={6} sm={12} xs={12}>
-                    <div className="contato__form">
-                        <form>
-                            <label for="fname">Nome completo</label>
-                            <input type="text" id="fname" name="name" value={name} onChange={e => setName(e.target.value)} placeholder="Seu nome.." />
+            <div className="contato">
+                <div className="contato__form">
+                    <Form>
+                        <Row className="mb-3">
+                            <Form.Group as={Col} controlId="formGridEmail">
+                                <Form.Label>Nome completo</Form.Label>
+                                <Form.Control type="text" placeholder="Digite seu nome" value={name} onChange={e => setName(e.target.value)} />
+                            </Form.Group>
 
-                            <label for="lname">Email</label>
-                            <input type="email" id="lname" name="emailFrom" value={emailFrom} onChange={e => setEmailFrom(e.target.value)} placeholder="Sobrenome.." />
+                            <Form.Group as={Col} controlId="formGridPassword">
+                                <Form.Label>E-mail</Form.Label>
+                                <Form.Control type="email" placeholder="E-mail" value={emailFrom} onChange={e => setEmailFrom(e.target.value)} />
+                            </Form.Group>
+                        </Row>
+                        <Row className="mb-3">
+                            <Form.Group as={Col} controlId="formGridCity">
+                                <Form.Label>Telefone</Form.Label>
+                                <Form.Control />
+                            </Form.Group>
 
-                            <label for="subject">Assunto</label>
-                            <textarea id="subject" name="subject" value={message} onChange={e => setMessage(e.target.value)} placeholder="" style={{ height: 200 }}></textarea>
-
-                            <input type="submit" onClick={submit} value="Enviar" />
-                        </form>
-                    </div>
-                </Col>
-            </Row>
+                            <Form.Group as={Col} controlId="formGridState">
+                                <Form.Label>Serviço</Form.Label>
+                                <Form.Select defaultValue="Serviço...">
+                                    <option value={null}></option>
+                                    <option>Segurança</option>
+                                    <option>Portaria</option>
+                                    <option>Jardinagem</option>
+                                    <option>Limpeza</option>
+                                </Form.Select>
+                            </Form.Group>
+                        </Row>
+                        <Row className="mb-3">
+                            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                                <Form.Label>Mensagem</Form.Label>
+                                <Form.Control as="textarea" rows={6} value={message} onChange={e => setMessage(e.target.value)} />
+                            </Form.Group>
+                        </Row>
+                        <Button type="submit" variant="success" onClick={submit}  >Enviar</Button>
+                    </Form>
+                </div>
+            </div>
         </div>
     )
 }
