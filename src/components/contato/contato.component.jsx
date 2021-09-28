@@ -72,13 +72,13 @@ const Contato = () => {
                         <Row className="mb-3">
                             <Form.Group as={Col} lg={6} md={6} sm={12} xs={12} controlId="formGridCity">
                                 <Form.Label>Telefone</Form.Label>
-                                <Form.Control />
+                                <Form.Control placeholder="DDD 000000000"/>
                             </Form.Group>
 
-                            <Form.Group as={Col} lg={6} md={6} sm={12} xs={12} controlId="formGridState">
+                            <Form.Group as={Col} lg={6} md={6} sm={12} xs={12} controlId="formGridState" defaultValue="disabled">
                                 <Form.Label>Serviço</Form.Label>
-                                <Form.Select defaultValue="Serviço...">
-                                    <option value={null}></option>
+                                <Form.Select defaultValue="" disable>
+                                    <option disabled selected value={null}></option>
                                     <option>Segurança</option>
                                     <option>Portaria</option>
                                     <option>Jardinagem</option>
@@ -89,7 +89,7 @@ const Contato = () => {
                         <Row className="mb-3">
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Mensagem</Form.Label>
-                                <Form.Control as="textarea" rows={6} value={message} onChange={e => setMessage(e.target.value)} />
+                                <Form.Control placeholder="Digite aqui sua mensagem" as="textarea" rows={6} value={message} onChange={e => setMessage(e.target.value)} />
                             </Form.Group>
                         </Row>
                         <Button type="submit" variant="success" onClick={submit}  >Enviar</Button>

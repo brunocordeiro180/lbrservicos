@@ -9,20 +9,20 @@ const Diferenciais = () => {
     return (
         <div id="diferenciais" className="diferenciais">
             <h4 className="diferenciais__title">
-                <strong>NOSSOS DIFERENCIAS</strong>
+                <strong>NOSSOS DIFERENCIAIS</strong>
             </h4>
             <Row className="diferenciais__row">
                 <Col lg={2} md={3} sm={6} xs={12} className="diferenciais__column">
                     <BiLineChartDown size={120} />
-                    <span>Menos Gasto</span>
+                    <span>Menor Gasto</span>
                 </Col>
                 <Col lg={2} md={3} sm={6} xs={12} className="diferenciais__column">
                     <BiHourglass size={120} />
-                    <span>Mais tempo livre</span>
+                    <span>Agilidade</span>
                 </Col>
                 <Col lg={2} md={3} sm={6} xs={12} className="diferenciais__column">
                     <HiLightningBolt size={120} />
-                    <span>Alta produtividade</span>
+                    <span>Maior produtividade</span>
                 </Col>
                 <Col lg={2} md={3} sm={6} xs={12} className="diferenciais__column">
                     <GiInjustice size={120} />

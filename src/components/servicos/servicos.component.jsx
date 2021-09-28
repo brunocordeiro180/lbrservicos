@@ -18,28 +18,28 @@ const Servicos = () => {
                     <div className="servicos-grid__card">
                         <img className="servicos-grid__card--img" alt="seguranca" src={seguranca} />
                         <span className="servicos-grid__card--title">Segurança</span>
-                        <p className="servicos-grid__card--text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae expedita maiores unde ea soluta atque repudiandae, eligendi velit id autem fuga eveniet et, ipsum adipisci sunt culpa quisquam? At, modi.</p>
+                        <p className="servicos-grid__card--text"></p>
                     </div>
                 </Col>
                 <Col lg={3} md={3} sm={6} xs={12}>
                     <div className="servicos-grid__card">
                         <img className="servicos-grid__card--img" alt="portaria" src={portaria} />
                         <span className="servicos-grid__card--title">Portaria</span>
-                        <p className="servicos-grid__card--text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae expedita maiores unde ea soluta atque repudiandae, eligendi velit id autem fuga eveniet et, ipsum adipisci sunt culpa quisquam? At, modi.</p>
+                        <p className="servicos-grid__card--text"></p>
                     </div>
                 </Col>
                 <Col lg={3} md={3} sm={6} xs={12}>
                     <div className="servicos-grid__card">
                         <img className="servicos-grid__card--img" alt="limpeza" src={limpeza} />
                         <span className="servicos-grid__card--title">Limpeza</span>
-                        <p className="servicos-grid__card--text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae expedita maiores unde ea soluta atque repudiandae, eligendi velit id autem fuga eveniet et, ipsum adipisci sunt culpa quisquam? At, modi.</p>
+                        <p className="servicos-grid__card--text"></p>
                     </div>
                 </Col>
                 <Col lg={3} md={3} sm={6} xs={12}>
                     <div className="servicos-grid__card">
                         <img className="servicos-grid__card--img" alt="jardinagem" src={jardinagem} />
                         <span className="servicos-grid__card--title">Jardinagem</span>
-                        <p className="servicos-grid__card--text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae expedita maiores unde ea soluta atque repudiandae, eligendi velit id autem fuga eveniet et, ipsum adipisci sunt culpa quisquam? At, modi.</p>
+                        <p className="servicos-grid__card--text"></p>
                     </div>
                 </Col>
             </Row>
