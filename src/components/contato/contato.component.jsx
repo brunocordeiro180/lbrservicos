@@ -83,6 +83,7 @@ const Contato = () => {
                                     <option>Portaria</option>
                                     <option>Jardinagem</option>
                                     <option>Limpeza</option>
+                                    <option>Outro</option>
                                 </Form.Select>
                             </Form.Group>
                         </Row>
@@ -92,7 +93,7 @@ const Contato = () => {
                                 <Form.Control placeholder="Digite aqui sua mensagem" as="textarea" rows={6} value={message} onChange={e => setMessage(e.target.value)} />
                             </Form.Group>
                         </Row>
-                        <Button type="submit" variant="success" onClick={submit}  >Enviar</Button>
+                        <Button type="submit" variant="success" onClick={submit}>Enviar</Button>
                     </Form>
                 </div>
             </div>

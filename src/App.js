@@ -5,6 +5,7 @@ import Diferenciais from "./components/diferenciais/diferenciais.component";
 import Menu from './components/navbar/navbar.component';
 import SobreNos from './components/sobre-nos/sobre-nos.components';
 import Banner from './components/banner/banner.component';
+import Footer from './components/footer/footer.component';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Servicos />
       <Diferenciais />
       <Contato />
+      <Footer />
     </>
   );
 }

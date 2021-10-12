@@ -31,7 +31,7 @@ const Servicos = () => {
                 <Col lg={3} md={3} sm={6} xs={12}>
                     <div className="servicos-grid__card">
                         <img className="servicos-grid__card--img" alt="limpeza" src={limpeza} />
-                        <span className="servicos-grid__card--title">Limpeza</span>
+                        <span className="servicos-grid__card--title">Limpeza e Conservação</span>
                         <p className="servicos-grid__card--text"></p>
                     </div>
                 </Col>
