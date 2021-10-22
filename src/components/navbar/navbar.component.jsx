@@ -20,8 +20,8 @@ const Menu = () => {
                     <p /> Envie seu currículo para contato@grupolbrservicos.com.br
                     <p /> Agradecemos o seu interesse em fazer parte do Grupo LBR Serviços.</Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" onClick={handleClose} bg="dark" variant="dark" >
-                        Fechar
+                    <Button variant="primary" onClick={handleClose} bg="dark" >
+                    Fechar
                     </Button>
                 </Modal.Footer>
             </Modal>
